@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>id generate</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            /* background-color: gray; */
+            border: 1px solid black;
+            height: 400px;
+            width: 300px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            
+        }
+        .college{
+            text-align: center;
+            color: rgb(154, 15, 15);
+        }
+        .img{
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+            flex-direction: column;
+        }
+        .section{
+            display: flex;
+            margin: 10px;
+        }
+        #details{
+            width: 50%;
+        }
+        #data{
+            width: 30%;
+        }
+        #data input{
+            width: 140px;
+        }
+        .button{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+        .button button{
+            font-size: large;
+            cursor: pointer;
+            
+        }
+        
+
+
+    </style>
+</head>
+ <body>
+
+
+     <fieldset id="fieldset">
+        <legend>Enter Details</legend>
+        <form id="form" action="./assignment4.html">
+            <div>
+                <label for="image">Enter Image:</label>
+            <input type="file" placeholder="Inset-image" id="image">
+            </div>
+            <div>
+                <label for="nameInput">Enter Your Name</label>
+            <input type="text" placeholder="Name" id="nameInput">
+            </div>
+           <div>
+             <label for="branch">Enter Branch</label>
+            <input type="text" placeholder="Branch" id="branch">
+           </div>
+           <div>
+             <label for="addmission">Enter Addmission No</label>
+            <input type="text" placeholder="Addmission No" id="addmission">
+           </div>
+           <div>
+             <label for="dob">Enter DOB</label>
+            <input type="text" placeholder="DOB" id="dob">
+           </div>
+           <div>
+             <label for="blood">Enter Blood Group</label>
+            <input type="text" placeholder="BloodGroup" id="blood">
+           </div>
+           <div>
+             <label for="hostle">Enter Hostel</label>
+            <input type="text" placeholder="Yes or No" id="hostle">
+           </div>
+           <div>
+             <label for="date">Enter Valid Till</label>
+            <input type="text" placeholder="Validity" id="date">
+           </div>
+           <div class="submit">
+            <input type="submit" value="submit" id="submit">
+           </div>
+        </form>
+    </fieldset>
+
+<!-- second Part -->
+
+    <div id="container">
+    <!-- college -->
+      <div class="college">
+        <h1>ABES</h1>
+        <p>Engineering College</p>
+      </div>
+<!-- image -->
+    <div class="img">
+        <!-- <img src="../img/google.jpeg" alt="" /> -->
+        <img src="" alt="" id="imageDisplay"/>
+    </div>
+
+    <!-- name -->
+     <div class="name">
+        <h3 id="name_input">Azami Sawej Shereaslam</h3>
+        <p id="name_branch">MCA</p>
+        <p class="line"></p>
+     </div>
+     <!-- details -->
+     <div class="detail">
+      <ul>
+        <li id="detail_addmission">ADDMISSION NO:</li>
+        <li id="detail_dob">DOB:</li>
+        <li id="detail_blood">BLOOD GROUP:</li>
+        <li id="detail_hostle">HOSTEL:</li>
+        <li id="detail_validity">VALID TILL:</li>
+      </ul>
+     </div>
+      </div>
+  </body>
+  <script src="day6.js"></script>
+</html>
